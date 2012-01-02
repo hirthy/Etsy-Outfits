@@ -1,0 +1,301 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  color: #97a488;
+}
+
+.templates, .template {
+  display: none;
+}
+
+#shim {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: gray;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
+.dialog {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  z-index: 2;
+  background-color: #ff6600;
+  color: white;
+  padding: 10px;
+  border: 4px solid white;
+}
+.dialog .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.dialog.current {
+  display: block;
+}
+.dialog.current ~ #shim {
+  display: block;
+}
+
+body {
+  background-color: #ffcc66;
+  font: 13px/20px "Lucida Grande", Arial, sans-serif;
+}
+body .logged-out, body .logged-in {
+  display: none;
+}
+body.logged-out .logged-out, body.logged-in .logged-in {
+  display: inline-block;
+}
+body .covered {
+  display: none;
+}
+body .correct {
+  color: #009900;
+}
+body .incorrect {
+  color: red;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  display: inline;
+}
+
+button, a {
+  border: 2px solid #ff9900;
+  background-color: white;
+  color: #97a488;
+  font-size: 18px;
+  padding: 3px 5px;
+  margin: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: normal;
+  font-family: "Lucida Grande", Arial, sans-serif;
+}
+
+.new-outfit {
+  margin-left: 10px;
+}
+
+button:hover, a:hover {
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 8px 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 8px 1px;
+  -o-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 8px 1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 8px 1px;
+}
+
+.logo-holder {
+  border: none;
+  background-color: transparent;
+}
+
+header {
+  background: white;
+  border-bottom: 2px solid #ff9900;
+  padding: 10px;
+  overflow: hidden;
+  *zoom: 1;
+}
+header .home, .back {
+  float: left;
+}
+header > div {
+  float: right;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+}
+#container #content {
+  padding-top: 20px;
+  overflow: hidden;
+}
+#container #content .reinforcement {
+  font-size: 32px;
+  text-align: center;
+}
+#container #content #lesson {
+  text-align: center;
+  padding: 60px;
+}
+#container #content #lesson .sentence {
+  font-size: 28px;
+}
+#container #content #action-menu {
+  padding-top: 20px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin: 5px 0px;
+}
+
+.blurb {
+  padding-top: 10px;
+  font-size: 36px;
+  color: white;
+  text-shadow: gray 0px 1px 0px;
+}
+
+.landing #container {
+  width: 50%;
+  text-align: center;
+}
+.landing #container .about {
+  display: block;
+  margin: auto;
+  padding: 60px;
+}
+
+.users #content, .outfits #content, .activities #content {
+  background: white;
+  border: 2px solid #ff9900;
+  margin: 40px 0px;
+  padding: 20px 40px;
+}
+
+li.outfit button, li.outfit a, li.user button, li.user a {
+  display: block;
+}
+#results {
+  float: left;
+}
+#etsy-images { 
+  width: 376px; 
+  min-height: 154px;
+  background: #ffcc66; 
+  //display: inline-block;
+  margin: 10px 80px 0 0;
+  } 
+* html #etsy-images {
+  height: 12em; 
+  } /* IE6 */
+div#outfit {
+  float: left;
+  display: inline-block;
+  width: 450px;
+}
+.piece { 
+  color: white;
+  background: #ffcc66;
+  float: left; 
+  width: 186px; 
+  height: 176px;
+  margin: 5px; 
+  padding: 1%;
+  text-align: right; 
+  } 
+* html .piece { 
+  height: 8em; 
+  } /* IE6 */
+#head-piece{
+  float: left;
+}
+#neck-piece{
+  float: left;
+}
+#body-piece {
+  float: left;
+}
+#hands-piece{
+  clear: left;
+}
+#legs-piece{
+  clear: left;
+}
+#feet-piece {
+  clear: left;
+}
+.disclaimer {
+  bottom: 5px;
+  position: absolute;
+  left: 22%;
+}
+.switch-dialog {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 100%;
+}
+.switch-dialog:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  text-decoration: underline;  
+}
