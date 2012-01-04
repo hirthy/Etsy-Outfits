@@ -147,7 +147,12 @@ button, a {
 }
 
 .new-outfit {
-  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#action-buttons {
+  text-align: center;
 }
 
 button:hover, a:hover {
@@ -210,16 +215,16 @@ form label {
   font-size: 36px;
   color: white;
   text-shadow: gray 0px 1px 0px;
+  text-align: center;
 }
 
 .landing #container {
   width: 50%;
   text-align: center;
 }
-.landing #container .about {
+.about {
   display: block;
   margin: auto;
-  padding: 60px;
 }
 
 .users #content, .outfits #content, .activities #content {

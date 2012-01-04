@@ -11,11 +11,14 @@
 </header>
 <section id="container">
   <section id="content">
-    <span class="blurb">Find the perfect outfit.</span><?= anchor('outfits/create', 'Make a New Outfit', 'class="new-outfit"') ?> 
+    <h1 class="blurb">Find the perfect outfit.</h1>
     <?= img(array(
         'src' => 'images/fashion.png',
         'class' => 'about'
-      )); ?> 
+      )); ?>
+    <div id="action-buttons">   
+      <?= anchor('outfits/create', 'Make a New Outfit', 'class="new-outfit"') ?>
+    </div> 
   </section>
 </section>
 <div class="dialogs">
