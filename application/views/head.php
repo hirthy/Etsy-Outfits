@@ -22,22 +22,22 @@
        $('.dialog.login').addClass('current');
        return false;
      });
-     $('#outfit').submit(function(event){
+     $('#outfit, .new-outfit').click(function(event){
        if(!$('body').hasClass('logged-in')) {
-         
-         $('.dialog.signup').addClass('current');
-          // get all the inputs into an array.
-           var $inputs = $('#outfit :input');
 
-           var values = {};
-           $inputs.each(function() {
-               values[this.name] = $(this).val();
-           });
-          $.cookies.set('outfitdata', values);
-          return false;
-        } else {
-          return true;
-        }
+           $('.dialog.signup').addClass('current');
+            // get all the inputs into an array.
+             var $inputs = $('#outfit :input');
+
+             var values = {};
+             $inputs.each(function() {
+                 values[this.name] = $(this).val();
+             });
+            $.cookies.set('outfitdata', values);
+            return false;
+          } else {
+            return true;
+          }
      });
    });
    </script>

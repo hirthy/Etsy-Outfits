@@ -2,7 +2,7 @@
 <header>
   <?= anchor('/', 'Home', 'class="home"'); ?>
   <div class="session">
-    <?= anchor('/logout', 'Log Out', 'class="logged-in logout"'); ?>
+    <?= anchor('/users/logout', 'Log Out', 'class="logged-in logout"'); ?>
   </div>
 </header>
 <section id="container">

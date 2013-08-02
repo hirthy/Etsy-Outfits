@@ -7,7 +7,7 @@ class Users extends CI_Controller {
       redirect(base_url());
       return;
     } else {
-      redirect('outfits');
+      redirect('/outfits');
     }
   }
 
@@ -103,7 +103,7 @@ class Users extends CI_Controller {
 
     if (! empty($u->id)) {
       $this->_setSessionForUser($email);
-      redirect('/outfits');
+      redirect('/outfits/create');
     } else {
       //TODO return errors
       redirect(base_url());

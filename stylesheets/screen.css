@@ -304,3 +304,14 @@ div#outfit {
   box-shadow: none;
   text-decoration: underline;  
 }
+#outfitActions {
+  float: left;
+  width: 100%;
+}
+.standardForm {
+  text-align:right;
+  width: 200px;
+}
+.explanation {
+  font-size: 10px;
+}

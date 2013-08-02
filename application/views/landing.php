@@ -28,10 +28,11 @@
     echo form_open('users/login', $attributes);
     ?>
       <h2>Login</h2>
-
-      <label>Email: <input name="email" class="email" type="text" /></label>
-      <label>Password: <input name="password" class="password" type="password" /></label>
-      <input class="submit" type="submit" />
+      <div class="standardForm">
+        <label>Email: <input name="email" class="email" type="text" /></label>
+        <label>Password: <input name="password" class="password" type="password" /></label>
+        <input class="submit" type="submit" />
+      </div>
     </form>
     <button class="close">Close</button>
   </div>
@@ -41,12 +42,12 @@
     echo form_open('users/register', $attributes);
     ?>
       <h2>Sign Up</h2>
-
-      <label>Email: <input name="email" class="email" type="text" /></label>
-      <label>Password: <input name="password" type="password" /></label>
-      <label>Name: <input name="name" type="text" /></label>
-
-      <input class="submit" type="submit" />
+      <div class="standardForm">
+        <label>Email: <input name="email" class="email" type="text" /></label>
+        <label>Password: <input name="password" type="password" /></label>
+        <label>Name: <input name="name" type="text" /></label>
+        <input class="submit" type="submit" />
+      </div>
     </form>
     <button class="close">Close</button>
   </div>
