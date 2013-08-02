@@ -130,7 +130,6 @@ h1 {
 h2 {
   font-size: 22px;
   margin-bottom: 20px;
-  display: inline;
 }
 
 button, a {
@@ -310,7 +309,7 @@ div#outfit {
 }
 .standardForm {
   text-align:right;
-  width: 200px;
+  width: 206px;
 }
 .explanation {
   font-size: 10px;
